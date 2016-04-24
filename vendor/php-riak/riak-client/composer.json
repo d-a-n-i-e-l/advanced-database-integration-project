@@ -1,0 +1,39 @@
+{
+    "name":         "php-riak/riak-client",
+    "description":  "PHP Riak Client for PHP 5.4",
+    "homepage":     "http://github.com/php-riak/riak-client",
+    "keywords":     ["riak", "client", "driver", "database", "nosql"],
+    "license":      "MIT",
+    "authors": [
+        {
+            "name":  "Fabio B. Silva",
+            "email": "fabio.bat.silva@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Riak": "src/" }
+    },
+    "require": {
+        "php":                      ">=5.4.0",
+        "php-riak/riak-client-pb":  "~1",
+        "doctrine/annotations":     "~1",
+        "guzzlehttp/guzzle":        "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit":                       "~4",
+        "instaclick/coding-standard":            "~1.1",
+        "squizlabs/php_codesniffer":             "~1.5",
+        "satooshi/php-coveralls":                "~0.6",
+        "codeclimate/php-test-reporter":         "~0.1",
+        "php-mock/php-mock-phpunit":             "^0.2",
+        "instaclick/object-calisthenics-sniffs": "dev-master",
+        "instaclick/symfony2-coding-standard":   "dev-remaster"
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "RiakClientFixture\\": "tests",
+            "RiakClientTest\\": "tests",
+            "RiakClientFunctionalTest\\": "tests"
+        }
+    }
+}
